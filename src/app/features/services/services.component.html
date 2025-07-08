@@ -13,7 +13,7 @@
 <!-- Services Overview -->
 <section class="section-padding bg-white">
   <div class="container-custom">
-    <div class="text-center mb-16">
+    <div class="text-center mb-16" @fadeInUp>
       <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
         What We Offer
       </h2>
@@ -22,7 +22,7 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12" @staggerList>
       <!-- Web Development -->
       <div class="card group hover:scale-105 transition-transform duration-300">
         <div class="w-20 h-20 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors duration-300">
@@ -281,7 +281,7 @@
 <!-- Process Section -->
 <section class="section-padding bg-background">
   <div class="container-custom">
-    <div class="text-center mb-16">
+    <div class="text-center mb-16" @fadeInUp>
       <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
         Our Process
       </h2>
@@ -290,7 +290,7 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" @staggerList>
       <!-- Discovery -->
       <div class="text-center">
         <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
@@ -340,7 +340,7 @@
 
 <!-- CTA Section -->
 <section class="section-padding bg-primary text-white">
-  <div class="container-custom text-center">
+  <div class="container-custom text-center" @slideInUp>
     <h2 class="text-3xl md:text-4xl font-bold mb-6">
       Ready to Get Started?
     </h2>

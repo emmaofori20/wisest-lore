@@ -2,13 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { fadeInUp, slideInLeft, slideInRight, slideInUp } from '../../core/animations';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [CommonModule, RouterLink, ReactiveFormsModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  styleUrl: './contact.component.css',
+  animations: [fadeInUp, slideInLeft, slideInRight, slideInUp]
 })
 export class ContactComponent implements OnInit {
   contactForm!: FormGroup;

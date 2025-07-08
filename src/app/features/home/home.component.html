@@ -2,7 +2,7 @@
 <section class="bg-gradient-to-br from-primary to-primary-dark text-white section-padding">
   <div class="container-custom">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div>
+      <div @slideInLeft>
         <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Engineering 
           <span class="text-accent">Intelligent</span> 
@@ -21,11 +21,11 @@
           </a>
         </div>
       </div>
-      <div class="flex justify-center lg:justify-end">
-        <div class="w-80 h-80 bg-accent/20 rounded-full flex items-center justify-center">
-          <div class="w-64 h-64 bg-accent/30 rounded-full flex items-center justify-center">
+      <div class="flex justify-center lg:justify-end" @slideInRight>
+        <div class="w-80 h-80 bg-accent/20 rounded-full flex items-center justify-center animate-float" @bounceIn>
+          <div class="w-64 h-64 bg-accent/30 rounded-full flex items-center justify-center animate-pulse-slow">
             <div class="w-48 h-48 bg-accent/40 rounded-full flex items-center justify-center">
-              <div class="w-32 h-32 bg-accent rounded-full flex items-center justify-center">
+              <div class="w-32 h-32 bg-accent rounded-full flex items-center justify-center animate-bounce-slow">
                 <span class="text-white text-4xl font-bold">W</span>
               </div>
             </div>
@@ -39,7 +39,7 @@
 <!-- Brief Intro Section -->
 <section class="section-padding bg-white">
   <div class="container-custom">
-    <div class="text-center max-w-4xl mx-auto">
+    <div class="text-center max-w-4xl mx-auto" @fadeInUp>
       <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">
         What We Do
       </h2>
@@ -54,7 +54,7 @@
 <!-- Services Overview -->
 <section class="section-padding bg-background">
   <div class="container-custom">
-    <div class="text-center mb-16">
+    <div class="text-center mb-16" @fadeInUp>
       <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
         Our Services
       </h2>
@@ -63,7 +63,7 @@
       </p>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" @staggerList>
       <!-- Web Development -->
       <div class="card group hover:scale-105 transition-transform duration-300">
         <div class="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors duration-300">
@@ -167,7 +167,7 @@
 <section class="section-padding bg-white">
   <div class="container-custom">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div>
+      <div @slideInLeft>
         <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">
           About Wisest Lore
         </h2>
@@ -189,8 +189,8 @@
           Learn More About Us
         </a>
       </div>
-      <div class="flex justify-center lg:justify-end">
-        <div class="w-80 h-80 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl flex items-center justify-center">
+      <div class="flex justify-center lg:justify-end" @slideInRight>
+        <div class="w-80 h-80 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl flex items-center justify-center" @bounceIn>
           <div class="text-center">
             <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
               <span class="text-white text-2xl font-bold">W</span>
@@ -206,7 +206,7 @@
 
 <!-- CTA Section -->
 <section class="section-padding bg-primary text-white">
-  <div class="container-custom text-center">
+  <div class="container-custom text-center" @slideInUp>
     <h2 class="text-3xl md:text-4xl font-bold mb-6">
       Ready to Build Something Great?
     </h2>

@@ -1,6 +1,6 @@
 <!-- Hero Section -->
 <section class="bg-gradient-to-br from-primary to-primary-dark text-white section-padding">
-  <div class="container-custom text-center">
+  <div class="container-custom text-center" @fadeInUp>
     <h1 class="text-4xl md:text-6xl font-bold mb-6">
       Get In <span class="text-accent">Touch</span>
     </h1>
@@ -15,7 +15,7 @@
   <div class="container-custom">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
       <!-- Contact Form -->
-      <div>
+      <div @slideInLeft>
         <h2 class="text-3xl font-bold text-primary mb-6">
           Send Us a Message
         </h2>
@@ -156,7 +156,7 @@
       </div>
 
       <!-- Contact Information -->
-      <div>
+      <div @slideInRight>
         <h2 class="text-3xl font-bold text-primary mb-6">
           Contact Information
         </h2>
@@ -246,7 +246,7 @@
 <!-- FAQ Section -->
 <section class="section-padding bg-background">
   <div class="container-custom">
-    <div class="text-center mb-16">
+    <div class="text-center mb-16" @fadeInUp>
       <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
         Frequently Asked Questions
       </h2>
@@ -255,7 +255,7 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto" @staggerList>
       <div class="card">
         <h3 class="text-xl font-semibold text-primary mb-3">How long does a typical project take?</h3>
         <p class="text-text-secondary">
@@ -289,7 +289,7 @@
 
 <!-- CTA Section -->
 <section class="section-padding bg-primary text-white">
-  <div class="container-custom text-center">
+  <div class="container-custom text-center" @slideInUp>
     <h2 class="text-3xl md:text-4xl font-bold mb-6">
       Let's Build Something Great Together
     </h2>
