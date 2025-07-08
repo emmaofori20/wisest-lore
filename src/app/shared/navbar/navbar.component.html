@@ -1,0 +1,65 @@
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="container-custom">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+          <span class="text-white font-bold text-xl">W</span>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold text-primary">Wisest Lore</h1>
+          <p class="text-xs text-text-secondary">Engineering Intelligent Solutions</p>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a routerLink="/" routerLinkActive="text-accent" class="text-text-primary hover:text-accent transition-colors duration-200 font-medium">
+          Home
+        </a>
+        <a routerLink="/about" routerLinkActive="text-accent" class="text-text-primary hover:text-accent transition-colors duration-200 font-medium">
+          About
+        </a>
+        <a routerLink="/services" routerLinkActive="text-accent" class="text-text-primary hover:text-accent transition-colors duration-200 font-medium">
+          Services
+        </a>
+        <a routerLink="/contact" routerLinkActive="text-accent" class="text-text-primary hover:text-accent transition-colors duration-200 font-medium">
+          Contact
+        </a>
+        <a routerLink="/contact" class="btn-primary">
+          Let's Talk
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button (click)="toggleMobileMenu()" class="text-text-primary hover:text-accent transition-colors duration-200">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div *ngIf="isMobileMenuOpen" class="md:hidden py-4 border-t border-gray-200">
+      <div class="flex flex-col space-y-4">
+        <a routerLink="/" routerLinkActive="text-accent" class="text-text-primary hover:text-accent transition-colors duration-200 font-medium">
+          Home
+        </a>
+        <a routerLink="/about" routerLinkActive="text-accent" class="text-text-primary hover:text-accent transition-colors duration-200 font-medium">
+          About
+        </a>
+        <a routerLink="/services" routerLinkActive="text-accent" class="text-text-primary hover:text-accent transition-colors duration-200 font-medium">
+          Services
+        </a>
+        <a routerLink="/contact" routerLinkActive="text-accent" class="text-text-primary hover:text-accent transition-colors duration-200 font-medium">
+          Contact
+        </a>
+        <a routerLink="/contact" class="btn-primary text-center">
+          Let's Talk
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
